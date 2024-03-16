@@ -1,31 +1,37 @@
-const rangeLeft = document.getElementById("rangeLeft");
-const numberLeft = document.getElementById("numberLeft");
+var rangeLeft = document.getElementById("rangeLeft");
+var numberLeft = document.getElementById("numberLeft");
 
-// Update the number input when the range input changes
+var rangeTop = document.getElementById("rangeTop");
+var numberTop = document.getElementById("numberTop");
+
+var rangeRight = document.getElementById("rangeRight");
+var numberRight = document.getElementById("numberRight");
+
+var rangeBottom = document.getElementById("rangeBottom");
+var numberBottom = document.getElementById("numberBottom");
+
+var box = document.getElementById("box");
+
 rangeLeft.addEventListener("input", function () {
   numberLeft.value = this.value;
+  let radius = this.value + "px";
+  box.style.borderTopLeftRadius = radius;
 });
 
-const rangeTop = document.getElementById("rangeTop");
-const numberTop = document.getElementById("numberTop");
-
-// Update the number input when the range input changes
 rangeTop.addEventListener("input", function () {
   numberTop.value = this.value;
+  let radius = this.value + "px";
+  box.style.borderTopRightRadius = radius;
 });
 
-const rangeRight = document.getElementById("rangeRight");
-const numberRight = document.getElementById("numberRight");
-
-// Update the number input when the range input changes
 rangeRight.addEventListener("input", function () {
   numberRight.value = this.value;
+  let radius = this.value + "px";
+  box.style.borderBottomLeftRadius = radius;
 });
 
-const rangeBottom = document.getElementById("rangeBottom");
-const numberBottom = document.getElementById("numberBottom");
-
-// Update the number input when the range input changes
 rangeBottom.addEventListener("input", function () {
   numberBottom.value = this.value;
+  let radius = this.value + "px";
+  box.style.borderBottomRightRadius = radius;
 });

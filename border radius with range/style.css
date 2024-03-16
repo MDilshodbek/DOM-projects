@@ -6,3 +6,9 @@
   gap: 5px;
   font-size: 20px;
 }
+
+.data {
+  width: 500px;
+  height: 250px;
+  background-color: orange;
+}
